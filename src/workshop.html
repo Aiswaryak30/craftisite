@@ -1,0 +1,276 @@
+<style>
+
+
+      a {
+        text-decoration: none;
+      }
+      
+      a#link {
+        margin-top: 8px;
+
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      a#link:hover {
+        color: #B01EFF;
+      }
+
+      .button {
+        cursor: pointer;
+        width: 200px;
+        height: 80px;
+        background: white;
+        border-radius: 50px;
+        background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+        animation: gradient 2.5s infinite 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.2) forwards;
+        margin-left: 40%;
+        margin-top:5%;
+        padding-top: 16px;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;  
+        font-size: 40px;
+      }
+      
+      @keyframes gradient {
+        0% { background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%) }
+        10% { background: linear-gradient(90deg, #d53369 0%, #daae51 100%) }
+        20% { background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%) }
+        30% { background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%) }
+        40% { background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%) }
+        50% { background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%) }
+        60% { background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%) }
+        70% { background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%) }
+        80% { background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%) }
+        90% { background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%) }
+        100% { background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%) }
+      }
+
+
+      
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+  
+}
+      textarea:focus, input:focus{
+        outline: none;
+    }
+    ul li {
+        list-style: none;
+    }
+    h2{
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #7a00ff;
+        font-size: 28px;
+        width: 200px;
+        text-align: center;
+
+    }
+    ul {
+        display: inline-block
+    }
+    #contact {
+        background: #fff;
+        position: relative;
+        width: 400px;
+        height:400px;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top:30%;
+        box-shadow: 0 10px 20px rgba(0,0,0,.1)
+    }
+    .js #contact {
+        position: absolute;
+        top: 3em;
+        display: none;
+        left:0; right:0;
+    }
+     
+    input {
+        border: 0;
+        margin-top:5%;
+        width: 300px;
+        padding: 10px;
+        border-bottom: 2px solid #7a00ff;
+        background: none;
+        font-family: 'Fontawesome', 'Source Sans Pro', sans-serif;
+        display: block;
+        color: #7a00ff;
+    }
+
+    #submit {
+
+      border: 2px solid #7a00ff;
+      color: #7a00ff;
+    }
+    #submit:hover {
+        color: #fff;
+    }
+    .btn{
+        background: none;
+        border: 2px solid #252525;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        margin-top:30%;
+        padding: 1.2em 2em;
+        color: #212121;
+        font-family: 'Open Sans';
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        transition: ease all .3s;
+        display: block;
+    }
+     
+    .btn:hover{
+        background: #7a00ff;
+        color: #fff; border:
+        #7a00ff solid 2px;
+    }
+    .btn:active{
+        background: #3333aa;
+        color: #fff;
+        border: #3333aa solid 2px;
+    }
+     
+    .close {
+        position: absolute;
+        right: 20px;
+        top: -10px;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 3em;
+        color: #1a1eeb;
+    }
+    @media (max-width: 765px) {
+        textarea{
+            width: 250px;
+        }
+        input {
+            width: 250px;
+        }
+    }
+</style>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <ul id="ul" style="position:absolute;top:23%;left:5%">
+    <li id="li" style="position:absolute;margin-top:550%;left:5%" >
+      <a id="a" href="#">
+    <img src="poster1.jpg" style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+      </a>
+  </li>
+    <li id="li" style="margin-left:5550%;position:absolute">
+      <a id="a" href="#">
+    <img src="mask.jpg">
+      </a>
+  </li>  
+   
+
+  </li>          
+</ul>
+<div>
+    <header class="w3-container w3-xlarge" style="margin-left:30%;margin-top:3%;padding:1px 16px;width:900px">
+
+        <p class="w3-left" style="font-size: 25px;">Craft Workshop</p>
+              <p class="w3-right">
+            
+                <a class="nav-link " ui-sref="home" >Home <i class="fa fa-home" aria-hidden="true"></i></a>
+              </p>
+            </header>
+    
+</div>
+
+    <!-- Jumbotron -->
+
+    <hr class="my-5" style="border-bottom:2px solid rgb(239, 243, 25);width:900px;margin-left:20%">
+    
+    <div class="container my-4" >
+    <div  style="margin-top:-10%">
+      <div class="text-white text-center py-5 px-4 my-5" >
+          <img src="/project/poster.jpg" style="height:750px;width:580px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+
+        <div style="margin-left:33%;margin-top:-10%;position:absolute">
+            <a target=”_blank”  ><div class="button" id="c-btn">😸</div></a>
+            <a target=”_blank” id="link"  style="color: black;font-size:15px;margin-left:40%">Click Here to Register!</a>
+              
+        </div>
+          
+      </div>
+    </div>
+    <div id="contact">
+      <form action="#">
+        <ul>
+          <h2>Registeration</h2>
+          <li>
+            <input type="text" name="name" id="name" placeholder="&#xf2c0; Full name">
+            <input type="email" name="email" id="email" placeholder="&#xf003; Email">
+          </li>
+          <li>
+            <input type="number" name="mobile number" id="mobile number" placeholder="&#xf095; Mobile Number">
+          </li>
+          <li>
+            <input type="submit" value="Register" class="btn" id="submit">
+          </li>
+        </ul>
+      </form>
+    </div>
+
+  </div>
+    
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script>
+    (function(){
+      $('html').addClass('js');
+      
+      var contactForm = {
+        container: $('#contact'),
+        config: {
+          effect: 'slideToggle',
+          speed: 200
+        },
+        
+        init: function(config){
+          $.extend(this.config, config);
+          
+          $('#c-btn').on('click', this.show);
+        },
+     
+        show: function(){
+          var cf = contactForm,
+              container = cf.container,
+              config = cf.config;
+                        
+     
+          if(container.is(':hidden')){
+            cf.close.call(container);
+            container[config.effect]
+            (config.speed);
+          }
+        },
+     
+        close: function(){
+          var $this = $('#contact'); 
+          
+          if($this.find('span.close').length) return;
+     
+          $('<span class=close>-</span>')
+            .prependTo(this)
+            .on('click', function(){
+            $this[contactForm.config.effect](contactForm.config.speed);
+          })
+        }
+      };
+     
+    contactForm.init({
+      effect: 'fadeToggle',
+      speed: 200
+    });
+    })();
+  </script>

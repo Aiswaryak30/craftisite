@@ -1,0 +1,130 @@
+<ul id="ul" style="position:absolute;top:23%;left:-2%">
+  <li id="li">
+    <a id="a" href="#" >
+      <h2 id="h">Craft Workshop</h2>
+  
+      <p id="p1">Check details</p><i class="fa fa-hand-o-right" aria-hidden="true" style="font-size: 50px;"></i>
+    </a>
+  </li>
+  </ul>
+  <div  class=" sidebar bar-block container bg-white padding-6 min-vh-100 force-scroll sticky" style="z-index:3;width:250px;margin-left:15%;padding:10px;">
+    <h3 class="w3-wide pt-5" >CRAFTISITE</h3>
+  <nav class=" navbar navbar-expand-sm  navbar-light padding-64 pt-5" >
+  <ul class="nav flex-column" style="font-weight:bold;color:black;width:100%;position:relative;">
+  <li class="navbar-nav ">
+    <a class="nav-link " ui-sref="home" >Home <i class="fa fa-home" aria-hidden="true" style="font-size: 24px;"></i></a>
+  </li>
+    <li class="navbar-nav ">
+        <a class="nav-link py-2" data-toggle="collapse" data-target="#submenu1" style="cursor: pointer;">Categories  <i class="fa fa-list-alt" aria-hidden="true" style="font-size: 24px;"></i></a>
+        <div class="collapse" id="submenu1" aria-expanded="false">
+            <ul class="flex-column pl-2 py-2 nav">
+                <li class="nav-item"><a class="nav-link py-4" ui-sref="miniatures">Miniatures</a></li>
+                <li class="nav-item">
+                    <a class="nav-link collapsed py-1" ui-sref="custamised_gifts" data-toggle="collapse" data-target="#submenu1sub1">Customized gifts</a>         
+                </li>
+                <li class="nav-item"><a class="nav-link py-4" ui-sref="glass_painting">Glass Paintings</a></li>
+                <li class="nav-item ">
+                  <a class="nav-link notification" ui-sref="origami">Origami <span class="badge">Not for sale!!</span></a>
+                </li>
+            </ul>
+        </div>
+    </li>
+  
+    <li class="navbar-nav ">
+      <a class="nav-link " ui-sref="workshop">Learn with Us!</a>
+    </li>
+    
+  
+    <li class="navbar-nav ">
+        <a class="nav-link" ui-sref="custamised_gifts.videos">Videos <i class="fa fa-video-camera" aria-hidden="true" style="font-size: 24px;"></i></a>
+      </li>
+      <li class="navbar-nav ">
+      <a class="nav-link" ui-sref="cart" >Cart <i class="fa fa-shopping-cart " aria-hidden="true" style="font-size: 24px;"></i></a> 
+       </li>
+       <li class="navbar-nav ">
+      <a class="nav-link"  ui-sref="sign_in" >Sign In! <i class="fa fa-sign-in" aria-hidden="true" style="font-size: 24px;"></i></a>
+       </li>
+  
+    <li class="navbar-nav">
+      <a class="nav-link " href="#">My profile <i class="fa fa-user" aria-hidden="true" style="font-size: 24px;"></i></a>
+    </li>
+    <li class="navbar-nav">
+        <a class="nav-link" href="#">Order Details <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 24px;"></i></a>
+      </li>
+      <li class="navbar-nav ">
+        <a class="nav-link" href="#">Log Out <i class="fa fa-sign-out" aria-hidden="true" style="font-size: 24px;"></i></a>
+      </li>
+  </ul>
+  
+  
+  </nav>
+  
+  <footer class="pt-5">
+  <a href="#footer" class="navbar-nav">Contact</a> <br>
+  <a href="javascript:void(0)" class="navbar-nav" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> <br>
+  <a href="#footer"  class="navbar-nav">Subscribe</a>
+  </footer>
+  </div>
+  
+  
+  <div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+  <div class="w3-container w3-white w3-center">
+  <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+  <h2 class="w3-wide">NEWSLETTER</h2>
+  <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+  <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+  <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+  </div>
+  </div>
+  </div>
+  
+  <header class="w3-container w3-xlarge" style="margin-left:30%;margin-top:5%;padding:1px 16px;width:900px">
+          <p class="w3-left" style="font-size: 25px;">Origami</p>
+      
+        </header>
+        <div class="col-sm-8 col-md-11" style="margin-left:32%;margin-top:5%;padding:1px 16px;width:900px;" >
+          <div class="row">
+              <origami-categories origami="org.origami"></origami-categories>                                                       
+          </div>
+      </div>
+  
+      <div class="footer"> 
+        <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer" style="margin-left:32%;padding:1px 16px;width:900px;" >
+            <div class="w3-row-padding">
+       
+              <div class="w3-col s4">
+                <h4><b>Let's be Friends</b></h4>
+                <i class="fa fa-facebook-square" aria-hidden="true" style="font-size: 35px;"></i>
+                <i class="fa fa-instagram" aria-hidden="true" style="font-size: 35px;"></i>
+                <i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 35px;"></i>
+              </div>
+
+              <div class="w3-col s4 w3-justify">
+                <h4><b>Explore our Product Range</b></h4>
+                <p><a ui-sref="miniatures">Miniatures</a></p>
+                <p><a ui-sref="custamised_gifts">Customized gifts</a></p>
+                <p><a ui-sref="glass_painting">Glass Paintings</a></p>
+                <p><a ui-sref="origami">Origami</a></p>
+                <p><a ui-sref="workshop">Learn with Us!</a></p>
+                <p><a ui-sref="videos">Videos</a></p>
+               
+              </div>
+
+ 
+        
+              <div class="w3-col s4 w3-justify w3-right">
+                <h4><b>Get In Touch</b></h4>
+                <p>Mon-Sat: 9AM - 6PM IST</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i><b>Call/WhatsApp</b></p>
+                <p>9084672512</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i><b>Email</b></p>
+                <p>ourcraftisite@gmail.com</p>
+                <br>
+        
+              </div>
+            </div>
+          </footer>
+        </div>
+
+    
