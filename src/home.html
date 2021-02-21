@@ -36,9 +36,7 @@
   </li>
   
 
-  <li class="navbar-nav ">
-      <a class="nav-link" ui-sref="custamised_gifts.videos">Videos <i class="fa fa-video-camera" aria-hidden="true" style="font-size: 24px;"></i></a>
-    </li>
+
     <li class="navbar-nav ">
     <a class="nav-link" ui-sref="cart" >Cart <i class="fa fa-shopping-cart " aria-hidden="true" style="font-size: 24px;"></i></a> 
      </li>
@@ -61,9 +59,9 @@
 </nav>
 
 <footer class="pt-5">
-<a href="#footer" class="navbar-nav">Contact</a> <br>
+<a href="#footer" class="navbar-nav" id="scroll-to-bottom">Contact</a> <br>
 <a href="javascript:void(0)" class="navbar-nav" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> <br>
-<a href="#footer"  class="navbar-nav">Subscribe</a>
+
 </footer>
 </div>
 
@@ -208,7 +206,7 @@
                 <p><a ui-sref="glass_painting">Glass Paintings</a></p>
                 <p><a ui-sref="origami">Origami</a></p>
                 <p><a ui-sref="workshop">Learn with Us!</a></p>
-                <p><a ui-sref="videos">Videos</a></p>
+             
                
               </div>
 
@@ -257,6 +255,8 @@ $('a').click(function(e)
     e.preventDefault();
 });
 
-
+document.getElementById("scroll-to-bottom").addEventListener("click", function () {
+  document.body.scrollIntoView(false);
+});
 </script>
 
