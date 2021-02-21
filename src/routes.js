@@ -15,7 +15,7 @@
             url:'/',
             views:{
                 "":{
-                    templateUrl:'/src/home.html'
+                    templateUrl:'/craftisite/src/home.html'
                 },
                 "works@home":{
                     templateUrl:'/craftisite/src/works.html',
