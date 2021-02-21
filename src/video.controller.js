@@ -1,16 +1,16 @@
 
 
-(function(){
-    'use strict';
+// (function(){
+//     'use strict';
 
-    angular.module('craft')
-    .controller('VideoAppController',VideoAppController);
+//     angular.module('craft')
+//     .controller('VideoAppController',VideoAppController);
 
-    VideoAppController.$inject=['videos'];
-    function VideoAppController(videos){
-        var vdo=this;
+//     VideoAppController.$inject=['videos'];
+//     function VideoAppController(videos){
+//         var vdo=this;
 
-        vdo.videos=videos;
+//         vdo.videos=videos;
 
-    }
-})();
+//     }
+// })();

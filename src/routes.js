@@ -69,16 +69,16 @@
                 }]
             }
         })
-        .state('custamised_gifts.videos',{
-            url:'/custamised_gifts/videos',
-            templateUrl:'/craftisite/src/videos.html',
-            controller:'VideoAppController as vdo',
-            resolve:{
-                videos:['MiniDataService',function(MiniDataService){
-                    return MiniDataService.getAllVideos();
-                }]
-            }
-        })
+        // .state('custamised_gifts.videos',{
+        //     url:'/custamised_gifts/videos',
+        //     templateUrl:'/craftisite/src/videos.html',
+        //     controller:'VideoAppController as vdo',
+        //     resolve:{
+        //         videos:['MiniDataService',function(MiniDataService){
+        //             return MiniDataService.getAllVideos();
+        //         }]
+        //     }
+        // })
         .state('cart',{
             url:'/cart',
             templateUrl:'/craftisite/src/cart.html'
@@ -116,14 +116,7 @@
         });
   
 
-   
-        // .state('submit',{
-        //     url:'/submit/{categoryShortName}',
-        //     templateUrl:'/src/templates/signin.html',
-        //     controller:'menuItemController as menu',
-         
-           
-        // })
+ 
 
     }
 })();
