@@ -3,7 +3,7 @@
 
     angular.module('craft')
     .component('videosCategories',{
-        templateUrl:'/src/item.vdo.html',
+        templateUrl:'/craftisite/src/item.vdo.html',
         bindings:{
             videos:'<'
         }

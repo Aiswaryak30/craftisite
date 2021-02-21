@@ -3,7 +3,7 @@
 
     angular.module('craft')
     .component('menuCategories',{
-        templateUrl:'/src/item.template.html',
+        templateUrl:'/craftisite/src/item.template.html',
         bindings:{
             items:'<'
         }

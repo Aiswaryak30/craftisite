@@ -3,7 +3,7 @@
 
     angular.module('craft')
     .component('workCategories',{
-        templateUrl:'/src/item.work.html',
+        templateUrl:'/craftisite/src/item.work.html',
         bindings:{
             works:'<'
         }

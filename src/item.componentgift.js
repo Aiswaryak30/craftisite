@@ -3,7 +3,7 @@
 
     angular.module('craft')
     .component('giftCategories',{
-        templateUrl:'/src/item.gift.html',
+        templateUrl:'/craftisite/src/item.gift.html',
         bindings:{
             gifts:'<'
         }

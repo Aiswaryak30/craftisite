@@ -3,7 +3,7 @@
 
     angular.module('craft')
     .component('origamiCategories',{
-        templateUrl:'/src/item.origami.html',
+        templateUrl:'/craftisite/src/item.origami.html',
         bindings:{
             origami:'<'
         }

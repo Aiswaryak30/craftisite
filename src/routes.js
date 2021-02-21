@@ -18,7 +18,7 @@
                     templateUrl:'/src/home.html'
                 },
                 "works@home":{
-                    templateUrl:'/src/works.html',
+                    templateUrl:'/craftisite/src/works.html',
                     controller:'WorkAppController as wrk',
                     resolve:{
                         works:['MiniDataService',function(MiniDataService){
@@ -30,7 +30,7 @@
         })
         .state('miniatures',{
             url:'/miniatures',
-            templateUrl:'/src/miniatures.html',
+            templateUrl:'/craftisite/src/miniatures.html',
             controller:'CraftAppController as craft',
             resolve:{
                 items:['MiniDataService',function(MiniDataService){
@@ -41,7 +41,7 @@
         })
         .state('custamised_gifts',{
             url:'/custamised_gifts',
-            templateUrl:'/src/custamised_gifts.html',
+            templateUrl:'/craftisite/src/custamised_gifts.html',
             controller:'CustamisedAppController as custamised',
             resolve:{
                 gifts:['MiniDataService',function(MiniDataService){
@@ -51,7 +51,7 @@
         })
         .state('glass_painting',{
             url:'/glass_painting',
-            templateUrl:'/src/glass_painting.html',
+            templateUrl:'/craftisite/src/glass_painting.html',
             controller:'GlassPaintAppController as paint',
             resolve:{
                 glass:['MiniDataService',function(MiniDataService){
@@ -61,7 +61,7 @@
         })
         .state('origami',{
             url:'/origami',
-            templateUrl:'/src/origami.html',
+            templateUrl:'/craftisite/src/origami.html',
             controller:'OrigamiAppController as org',
             resolve:{
                 origami:['MiniDataService',function(MiniDataService){
@@ -71,7 +71,7 @@
         })
         .state('custamised_gifts.videos',{
             url:'/custamised_gifts/videos',
-            templateUrl:'/src/videos.html',
+            templateUrl:'/craftisite/src/videos.html',
             controller:'VideoAppController as vdo',
             resolve:{
                 videos:['MiniDataService',function(MiniDataService){
@@ -81,7 +81,7 @@
         })
         .state('cart',{
             url:'/cart',
-            templateUrl:'/src/cart.html'
+            templateUrl:'/craftisite/src/cart.html'
             // controller:'CartAppController as cart',
             // resolve:{
             //     cartitem:['MiniDataService',function(MiniDataService){
@@ -91,7 +91,7 @@
         })
         .state('register',{
             url:'/register',
-            templateUrl:'/src/register.html'
+            templateUrl:'/craftisite/src/register.html'
             // controller:'OrigamiAppController as org',
             // resolve:{
             //     origami:['MiniDataService',function(MiniDataService){
@@ -101,7 +101,7 @@
         })
         .state('sign_in',{
             url:'/sign_in',
-            templateUrl:'/src/sign_in.html'
+            templateUrl:'/craftisite/src/sign_in.html'
             // controller:'OrigamiAppController as org',
             // resolve:{
             //     origami:['MiniDataService',function(MiniDataService){
@@ -111,7 +111,7 @@
         })
         .state('workshop',{
             url:'/workshop',
-            templateUrl:'/src/workshop.html'
+            templateUrl:'/craftisite/src/workshop.html'
             
         });
   

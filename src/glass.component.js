@@ -3,7 +3,7 @@
 
     angular.module('craft')
     .component('glassCategories',{
-        templateUrl:'/src/item.glass.html',
+        templateUrl:'/craftisite/src/item.glass.html',
         bindings:{
             glass:'<'
         }
