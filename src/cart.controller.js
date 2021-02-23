@@ -1,15 +1,21 @@
 
-// (function(){
-//     'use strict';
+(function(){
+    'use strict';
 
-//     angular.module('craft')
-//     .controller('CartAppController',CartAppController);
+    angular.module('craft')
+    .controller('CartAppController',CartAppController);
 
-//     CartAppController.$inject=['cartitem'];
-//     function CartAppController(cartitem){
-//         var cart=this;
-
-//         cart.cartitem=cartitem;
-
-//     }
-// })();
+    CartAppController.$inject=['MiniDataService'];
+    function CartAppController(MiniDataService){
+        var cart=this;
+        cart.cartitem=MiniDataService.getItem();
+        cart.getPrice=MiniDataService.getPrice();
+        
+        cart.removeItem=function(itemindex){
+            MiniDataService.removeItem(itemindex);
+  
+        }
+       
+        
+    }
+})();

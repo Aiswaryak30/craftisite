@@ -16,17 +16,21 @@
 <div class="col-sm-1 col-md-7" style="max-width:380px;min-width:380px;margin-top:10%;position:relative; resize:initial;" ng-repeat="item in $ctrl.glass| filter:searchText" id="items">
     <div class="thumbnail " style="height:450px" >
      <img src={{item.Image}} alt="" style="width:650px;height:250px;">
-     <div>
-        <a  href="#" class="w3-left" style="font-size:30px;color:crimson;margin-left:5%" data-toggle="tooltip" data-placement="top" title="Remove from cart"><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
-        <h3 class="w3-left" style="margin-left: 30%;">0</h3>
-        <a href="#"  class="w3-right" style="font-size:30px;color:crimson;margin-right:5%" data-toggle="tooltip" data-placement="top" title="Add to cart"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-        </div>
-        <br>
+     <div style="margin-left:44%;">
+  
+      <button ng-click="$ctrl.addItem(item);" onclick="myFunction()"  style="font-size:20px;color:cornsilk;background-color:crimson;margin:6px;border:none;outline:none;padding:5px;width:33px;height:38px;align-content:center" class="w3-button w3-circle">+</button>
+      </div>
+   
+  
+      <!-- The actual snackbar -->
+      <div id="snackbar">One Item added to Cart <i class="fa fa-shopping-cart " aria-hidden="true" style="font-size: 24px;"></i></div>
+  
     <div class="caption" >
-    <h4 class="pull-right " style="margin-top:4%;margin-left:10%">{{item.Price | currency:"Rs."}}</h4>
-    <h4><a href="product.html">{{item.Name}}</a>
-    </h4>
-    <div class="container " style="resize:none;"  ng-controller="appController">
+      <h4 class=" w3-left" style="margin:0;"><a >{{item.Name}}</a>
+      </h4>
+    <h4 class="pull-right w3-right" style="margin:0;"><b>{{item.Price | currency:"Rs."}}</b></h4>
+    
+    <div class="container w3-left " style="resize:none;"  ng-controller="appController">
         <div>
             <div class="alert alert-info" style="max-width: 320px; margin-left:-1%;"> 
     
@@ -64,4 +68,15 @@
             })
           })
         })
+
+        function myFunction() {
+          // Get the snackbar DIV
+          var x = document.getElementById("snackbar")
+      
+          // Add the "show" class to DIV
+          x.className = "show";
+      
+          // After 3 seconds, remove the show class from DIV
+          setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
       </script>

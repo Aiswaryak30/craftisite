@@ -82,12 +82,7 @@
         .state('cart',{
             url:'/cart',
             templateUrl:'/craftisite/src/cart.html'
-            // controller:'CartAppController as cart',
-            // resolve:{
-            //     cartitem:['MiniDataService',function(MiniDataService){
-            //         return MiniDataService.getItems();
-            //     }]
-            // }
+         
         })
         .state('register',{
             url:'/register',
