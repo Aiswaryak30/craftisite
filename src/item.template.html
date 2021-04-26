@@ -1,3 +1,5 @@
+<link href="/craftisite/styles.css" rel="stylesheet">
+<link href="/craftisite/src/styles.scss" rel="stylesheet">
 
 <div class="container" style="margin-top:-5%;margin-left:15%;max-width:380px;position:relative">
     <p >
@@ -16,7 +18,7 @@
 
 <div  class="col-sm-4 col-md-7" id="snack" style="max-width:280px;min-width:280px;margin-top:10%;position:relative; resize:initial;" ng-repeat="item in $ctrl.items| filter:searchText"  id="items">
     <div class="thumbnail " style="height:600px" >
-     <img src={{item.Image}} alt="" style="width:450px;height:300px;">
+     <img src={{item.Image}} alt="" style="width:300px;height:250px;">
     <div style="margin-left:44%;">
   
     <button ng-click="$ctrl.addItem(item);" onclick="myFunction()"  style="font-size:20px;color:cornsilk;background-color:crimson;margin:6px;border:none;outline:none;padding:5px;width:33px;height:38px;align-content:center" class="w3-button w3-circle">+</button>

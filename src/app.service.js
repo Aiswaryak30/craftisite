@@ -4,7 +4,8 @@
     angular.module('craft')
     .service('MiniDataService',MiniDataService);
 
-    function MiniDataService(){
+    MiniDataService.$inject=['$http'];
+    function MiniDataService($http){
         var service=this;
         var miniatures=[
             {
@@ -250,57 +251,6 @@ var origamis=[
     }
 ];
 
-// var vdos=[
-//     {
-//         Name:'Happy Birthday Mom',
-//         Image:'/artcraft/greetings.mp4'
-//     },
-//     {
-//         Name:'Magic Pikachu',
-//         Image:'/artcraft/pikachu.mp4'
-//     },
-//     {
-//         Name:'Secret Message Card',
-//         Image:'/artcraft/secret.mp4'
-//     },
-//     {
-//         Name:'Slider Heart',
-//         Image:'/artcraft/dragheart.mp4'
-//     },
-//     {
-//         Name:'Waterfall Card',
-//         Image:'/artcraft/waterfall.mp4'
-//     },
-//     {
-//         Name:'Slider',
-//         Image:'/artcraft/slide.mp4'
-//     },
-//     {
-//         Name:'Magic Heart',
-//         Image:'/artcraft/magicheart.mp4'
-//     },
-//     {
-//         Name:'Fold Cubes',
-//         Image:'/artcraft/foldcubes.mp4'
-//     },
-//     {
-//         Name:'Flowers',
-//         Image:'/artcraft/flower.mp4'
-//     },
-//     {
-//         Name:'Mini Gift',
-//         Image:'/artcraft/card.mp4'
-//     },
-//     {
-//         Name:'Cake Greetings',
-//         Image:'/artcraft/cake.mp4'
-//     },
-//     {
-//         Name:'Mini Birthday Card',
-//         Image:'/artcraft/bday.mp4'
-//     }
-    
-// ];
 
 var works=[
     {
@@ -361,6 +311,7 @@ var works=[
     },
 ]
 service.getAllCategories=function(){
+
     return miniatures;
 }
 service.getAllGifts=function(){

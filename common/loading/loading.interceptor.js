@@ -11,7 +11,7 @@
 
         return{
             request:function(config){
-                console.log("inside interceptor,config : ",config);
+            
             if(++loadingCount===1){
                 $rootScope.$broadcast(loadingEventName,{on:true});
             }

@@ -69,44 +69,26 @@
                 }]
             }
         })
-        // .state('custamised_gifts.videos',{
-        //     url:'/custamised_gifts/videos',
-        //     templateUrl:'/craftisite/src/videos.html',
-        //     controller:'VideoAppController as vdo',
-        //     resolve:{
-        //         videos:['MiniDataService',function(MiniDataService){
-        //             return MiniDataService.getAllVideos();
-        //         }]
-        //     }
-        // })
+ 
         .state('cart',{
             url:'/cart',
             templateUrl:'/craftisite/src/cart.html'
          
         })
         .state('register',{
-            url:'/register',
-            templateUrl:'/craftisite/src/register.html'
-            // controller:'OrigamiAppController as org',
-            // resolve:{
-            //     origami:['MiniDataService',function(MiniDataService){
-            //         return MiniDataService.getAllOrigamis();
-            //     }]
-            // }
+            url:'/login',
+            templateUrl:'/craftisite/src/login.php'
+          
         })
-        .state('sign_in',{
-            url:'/sign_in',
-            templateUrl:'/craftisite/src/sign_in.html'
-            // controller:'OrigamiAppController as org',
-            // resolve:{
-            //     origami:['MiniDataService',function(MiniDataService){
-            //         return MiniDataService.getAllOrigamis();
-            //     }]
-            // }
-        })
+      
         .state('workshop',{
             url:'/workshop',
             templateUrl:'/craftisite/src/workshop.html'
+            
+        })
+        .state('checkout',{
+            url:'/checkout',
+            templateUrl:'/craftisite/src/checkout.html'
             
         });
   
